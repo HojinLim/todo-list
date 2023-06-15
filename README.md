@@ -7,5 +7,5 @@
 
 
 
-##.gitinit  : /node_modules
+### .gitinit  : /node_modules
 
