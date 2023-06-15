@@ -40,6 +40,15 @@ function App() {
     });
     setTodo(newTodoList);
   };
+  const cancelTodoHandler = (id) => {
+    const newTodoList = todo.map((work) => {
+      if (work.id === id) {
+        return { ...work, isDone: false };
+      }
+      return work;
+    });
+    setTodo(newTodoList);
+  };
 
   const onChangeTitleHandler = (event) => {
     const inputTitle = event.target.value;
@@ -53,18 +62,19 @@ function App() {
 
   return (
     <>
+    <div className="layout">
       <header className="header">
         <h1>TO-DO LIST</h1>
       </header>
       <form className="form">
         <span>제목: </span>
-        <input type="text" onChange={onChangeTitleHandler} value={title} />
+        <input className="input-box" type="text" onChange={onChangeTitleHandler} value={title} />
         <span>내용: </span>
-        <input type="text" onChange={onChangeContentHandler} value={content} />
-        <button onClick={addTodoHandler}>추가하기</button>
+        <input className="input-box" type="text" onChange={onChangeContentHandler} value={content} />
+        <button className="todo-add-btn" onClick={addTodoHandler}>추가하기</button>
       </form>
       <main className="main">
-        <article className="left-todo">
+        <article className="above-todo">
           <h2>TODO!</h2>
           {todo.map((todo) => {
             if (!todo.isDone) {
@@ -80,7 +90,7 @@ function App() {
             return null;
           })}
         </article>
-        <article className="right-todo">
+        <article className="under-todo">
           <h2>COMPLETE!</h2>
           {todo.map((todo) => {
             if (todo.isDone) {
@@ -89,7 +99,7 @@ function App() {
                   todo={todo}
                   key={todo.id}
                   handleDelete={deleteTodoHandler}
-                  handleComplete={completeTodoHandler}
+                  handleCancel={cancelTodoHandler}
                 />
               );
             }
@@ -97,6 +107,7 @@ function App() {
           })}
         </article>
       </main>
+      </div>
     </>
   );
 }
