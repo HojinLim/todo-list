@@ -20,7 +20,7 @@
 
 #### https://todo-list-ddssbn0ff-hojinlim.vercel.app/? 
 
-## .gitinit  :wilted_flower:
+## .gitinit  :exclamation:
 
 ####  /node_modules
 
