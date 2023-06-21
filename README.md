@@ -6,6 +6,9 @@
 
 #### Todo.jsx : todo, handleDelete, handleComplete매개변수로 받아 To-do 형태를 만들주는 기능.            
 <br/><br/>
+## 개발기간 :boxing_glove:
+#### (23.06.14~23.06.16)
+<br/><br/>
 ## 사용언어  :sun_with_face:
 #### <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white"/>
 <br/><br/>
