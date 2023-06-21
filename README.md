@@ -2,7 +2,7 @@
 
 *****
 
-## 컴포넌트 파일  :sunny: 
+##  :sun_with_face: 컴포넌트 파일  :sunny: 
 
 #### Todo.jsx : todo, handleDelete, handleComplete매개변수로 받아 To-do 형태를 만들주는 기능.            
 <br/><br/>
